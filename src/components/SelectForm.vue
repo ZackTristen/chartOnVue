@@ -12,11 +12,13 @@
         placeholder="Количество"
         aria-describedby="basic-addon1"
       />
-      <button class="btn btn-secondary" @click="changeCount">Отправить!</button>
+      <button class="btn btn-secondary send" @click="changeCount">
+        Отправить!
+      </button>
     </div>
 
     <div class="select_form">
-      <span>Выберите временной промежуток</span>
+      <span>Выберите время</span>
       <select
         class="form-select"
         v-if="this.$store.state.flagsActive.hours"
@@ -76,15 +78,21 @@ export default {
 .form-select {
   max-width: 200px;
   text-align: center;
+  margin-top: 10px;
 }
 .select_form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 .form_add {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.send {
+  background-color: #fabd2f;
+  border-color: aliceblue;
 }
 </style>

@@ -35,12 +35,10 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.chart {
-  min-width: 70%;
-  margin: 10px;
+body {
+  margin: 0;
 }
-.select {
-  margin: 10px;
+.chart {
   min-width: 50%;
 }
 </style>
