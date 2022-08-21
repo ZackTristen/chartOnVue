@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="flex_parent">
+    <h1>График</h1>
+    <div class="chart">
+      <chart-coffee></chart-coffee>
+    </div>
+    <div class="select"><select-form></select-form></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ChartCoffee from './components/ChartCoffee.vue';
+import SelectForm from './components/SelectForm.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    ChartCoffee,
+    SelectForm,
+  },
+};
 </script>
 
 <style>
@@ -24,5 +28,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.flex_parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chart {
+  min-width: 70%;
+  margin: 10px;
+}
+.select {
+  margin: 10px;
+  min-width: 50%;
 }
 </style>
