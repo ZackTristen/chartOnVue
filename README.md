@@ -1,10 +1,10 @@
 # test-chart
 
-# Динамический график на apex chart и vue
+### Динамический график на apex chart и vue
 
-# ссылка на готовый проект
+### ссылка на готовый проект
 
-# https://chartonvue.onrender.com
+### https://chartonvue.onrender.com
 
 ## Project setup
 
@@ -23,8 +23,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# chartOnVue"
